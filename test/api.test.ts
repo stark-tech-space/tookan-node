@@ -4,7 +4,7 @@ import api from '../src/api';
 dotenv.config();
 
 const client = new api({
-  apiKey: process.env.API_KEY,
+  apiKey: process.env.API_KEY || '',
 });
 
 describe('example test', () => {
