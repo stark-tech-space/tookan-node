@@ -25,422 +25,421 @@ export default class Api {
  AGENT API's
  */
 
-  editAgent = async (object: { api_key: string }) => {
+  editAgent = async (object: any) => {
     const path = '/edit_agent';
-    object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  addAgent = async (object: { api_key: string }) => {
+  addAgent = async (object: any) => {
     const path = '/add_agent';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  getAllAgents = async (object: { api_key: string }) => {
+  getAllAgents = async (object: any) => {
     const path = '/get_available_agents';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  blockAndUnblockAgent = async (object: { api_key: string }) => {
+  blockAndUnblockAgent = async (object: any) => {
     const path = '/block_and_unblock_agent';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  viewAgentProfile = async (object: { api_key: string }) => {
+  viewAgentProfile = async (object: any) => {
     const path = '/view_fleet_profile';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  updateAgentTags = async (object: { api_key: string }) => {
+  updateAgentTags = async (object: any) => {
     const path = '/update_fleet_tags';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  getAgentTags = async (object: { api_key: string }) => {
+  getAgentTags = async (object: any) => {
     const path = '/get_fleet_tags';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  getAgentLogs = async (object: { api_key: string }) => {
+  getAgentLogs = async (object: any) => {
     const path = '/get_agent_duty_logs';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  getAgentLocation = async (object: { api_key: string }) => {
+  getAgentLocation = async (object: any) => {
     const path = '/get_fleet_location';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  sendNotificationToAgent = async (object: { api_key: string }) => {
+  sendNotificationToAgent = async (object: any) => {
     const path = '/send_notification';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  getAgentSchedule = async (object: { api_key: string }) => {
+  getAgentSchedule = async (object: any) => {
     const path = '/get_fleets_availability';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  assignAgentToTask = async (object: { api_key: string }) => {
+  assignAgentToTask = async (object: any) => {
     const path = '/assign_fleet_to_task';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  deleteAgent = async (object: { api_key: string }) => {
+  deleteAgent = async (object: any) => {
     const path = '/delete_fleet_account';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
   /*
  TASK API's
  */
 
-  createTask = async (object: { api_key: string }) => {
+  createTask = async (object: any) => {
     const path = '/create_task';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  createMultipleTasks = async (object: { api_key: string }) => {
+  createMultipleTasks = async (object: any) => {
     const path = '/create_multiple_tasks';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  getTaskDetails = async (object: { api_key: string }) => {
+  getTaskDetails = async (object: any) => {
     const path = '/get_task_details';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  getTaskDetailsFromOrderId = async (object: { api_key: string }) => {
+  getTaskDetailsFromOrderId = async (object: any) => {
     const path = '/get_task_details_by_order_id';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  editTask = async (object: { api_key: string }) => {
+  editTask = async (object: any) => {
     const path = '/edit_task';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  editMultipleTask = async (object: { api_key: string }) => {
+  editMultipleTask = async (object: any) => {
     const path = '/edit_multiple_tasks';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  updateTaskStatus = async (object: { api_key: string }) => {
+  updateTaskStatus = async (object: any) => {
     const path = '/update_task_status';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  startTask = async (object: { api_key: string }) => {
+  startTask = async (object: any) => {
     const path = '/update_task_status';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  cancelTask = async (object: { api_key: string }) => {
+  cancelTask = async (object: any) => {
     const path = '/update_task_status';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  assignTask = async (object: { api_key: string }) => {
+  assignTask = async (object: any) => {
     const path = '/assign_task';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  autoAssignTask = async (object: { api_key: string }) => {
+  autoAssignTask = async (object: any) => {
     const path = '/re_autoassign_task';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  getAllTasks = async (object: { api_key: string }) => {
+  getAllTasks = async (object: any) => {
     const path = '/get_all_tasks';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  getTaskStatistics = async (object: { api_key: string }) => {
+  getTaskStatistics = async (object: any) => {
     const path = '/user_task_stats';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  deleteTask = async (object: { api_key: string }) => {
+  deleteTask = async (object: any) => {
     const path = '/delete_task';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
   /*
  TEAM API's
  */
 
-  createTeam = async (object: { api_key: string }) => {
+  createTeam = async (object: any) => {
     const path = '/create_team';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  updateTeam = async (object: { api_key: string }) => {
+  updateTeam = async (object: any) => {
     const path = '/update_team';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  deleteTeam = async (object: { api_key: string }) => {
+  deleteTeam = async (object: any) => {
     const path = '/delete_team';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  getTeamDetails = async (object: { api_key: string }) => {
+  getTeamDetails = async (object: any) => {
     const path = '/view_teams';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  getJobAndAgentDetails = async (object: { api_key: string }) => {
+  getJobAndAgentDetails = async (object: any) => {
     const path = '/get_job_and_fleet_details';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
   /*
  MANAGER API's
  */
 
-  createManager = async (object: { api_key: string }) => {
+  createManager = async (object: any) => {
     const path = '/add_manager';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  viewManager = async (object: { api_key: string }) => {
+  viewManager = async (object: any) => {
     const path = '/view_all_manager';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  deleteManager = async (object: { api_key: string }) => {
+  deleteManager = async (object: any) => {
     const path = '/delete_manager';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
   /*
  CUSTOMER API's
  */
 
-  getCustomers = async (object: { api_key: string }) => {
+  getCustomers = async (object: any) => {
     const path = '/get_all_customers';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  addCustomer = async (object: { api_key: string }) => {
+  addCustomer = async (object: any) => {
     const path = '/customer/add';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  editCustomer = async (object: { api_key: string }) => {
+  editCustomer = async (object: any) => {
     const path = '/customer/edit';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  deleteCustomer = async (object: { api_key: string }) => {
+  deleteCustomer = async (object: any) => {
     const path = '/delete_customer';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  findCustomerWithPhone = async (object: { api_key: string }) => {
+  findCustomerWithPhone = async (object: any) => {
     const path = '/find_customer_with_phone';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  findCustomerWithName = async (object: { api_key: string }) => {
+  findCustomerWithName = async (object: any) => {
     const path = '/find_customer_with_name';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  viewCustomerProfile = async (object: { api_key: string }) => {
+  viewCustomerProfile = async (object: any) => {
     const path = '/view_customer_profile';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
   /*
  MERCHANT API's
  */
 
-  createMerchant = async (object: { api_key: string }) => {
+  createMerchant = async (object: any) => {
     const path = '/merchant/sign_up';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  viewMerchant = async (object: { api_key: string }) => {
+  viewMerchant = async (object: any) => {
     const path = '/merchant/get_merchant';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  editMerchant = async (object: { api_key: string }) => {
+  editMerchant = async (object: any) => {
     const path = '/merchant/edit_merchant';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  getMerchantDetails = async (object: { api_key: string }) => {
+  getMerchantDetails = async (object: any) => {
     const path = '/merchant/get_merchant_data';
     object.api_key = this.apiKey;
     return this.client.get(path, {
-      params: object,
+      params: { api_key: this.apiKey, ...object },
     });
   };
 
-  getMerchantReport = async (object: { api_key: string }) => {
+  getMerchantReport = async (object: any) => {
     const path = '/merchant/report';
     object.api_key = this.apiKey;
-    return this.client.get(path, { params: object });
+    return this.client.get(path, { params: { api_key: this.apiKey, ...object } });
   };
 
-  blockAndUnblockMerchant = async (object: { api_key: string }) => {
+  blockAndUnblockMerchant = async (object: any) => {
     const path = '/merchant/block_merchant';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  deleteMerchant = async (object: { api_key: string }) => {
+  deleteMerchant = async (object: any) => {
     const path = '/merchant/delete';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  getAvailableMerchantAgents = async (object: { api_key: string }) => {
+  getAvailableMerchantAgents = async (object: any) => {
     const path = '/get_available_agents';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  assignMerchantAgentToTask = async (object: { api_key: string }) => {
+  assignMerchantAgentToTask = async (object: any) => {
     const path = '/assign_fleet_to_task';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  createMerchantTask = async (object: { api_key: string }) => {
+  createMerchantTask = async (object: any) => {
     const path = '/create_task';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  createMultipleMerchantTasks = async (object: { api_key: string }) => {
+  createMultipleMerchantTasks = async (object: any) => {
     const path = '/create_multiple_tasks';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  editMerchantTask = async (object: { api_key: string }) => {
+  editMerchantTask = async (object: any) => {
     const path = '/edit_task';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  assignMerchantToTask = async (object: { api_key: string }) => {
+  assignMerchantToTask = async (object: any) => {
     const path = '/merchant/assign_merchant_to_task';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  getMerchantTeams = async (object: { api_key: string }) => {
+  getMerchantTeams = async (object: any) => {
     const path = '/merchant/get_merchant_teams';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
   /*
  GEOFENCE API's
  */
 
-  addRegion = async (object: { api_key: string }) => {
+  addRegion = async (object: any) => {
     const path = '/add_region';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  editRegion = async (object: { api_key: string }) => {
+  editRegion = async (object: any) => {
     const path = '/edit_region';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  viewRegions = async (object: { api_key: string }) => {
+  viewRegions = async (object: any) => {
     const path = '/view_regions';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  viewRegionDetails = async (object: { api_key: string }) => {
+  viewRegionDetails = async (object: any) => {
     const path = '/view_regions_only';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  removeRegionForAgent = async (object: { api_key: string }) => {
+  removeRegionForAgent = async (object: any) => {
     const path = '/remove_region_for_agent';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  deleteRegion = async (object: { api_key: string }) => {
+  deleteRegion = async (object: any) => {
     const path = '/remove_region';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
   /*
  MISSION API's
  */
-  createMission = async (object: { api_key: string }) => {
+  createMission = async (object: any) => {
     const path = '/create_mission_task';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  missionList = async (object: { api_key: string }) => {
+  missionList = async (object: any) => {
     const path = '/get_mission_list';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 
-  deleteMission = async (object: { api_key: string }) => {
+  deleteMission = async (object: any) => {
     const path = '/delete_mission';
     object.api_key = this.apiKey;
-    return this.client.post(path, object);
+    return this.client.post(path, { api_key: this.apiKey, ...object });
   };
 }
