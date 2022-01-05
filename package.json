@@ -1,7 +1,7 @@
 {
-  "name": "@stark-tech-space/api-package-template",
-  "version": "1.0.1",
-  "description": "API package template",
+  "name": "@stark-tech-space/tookan-node",
+  "version": "1.0.2",
+  "description": "Tookan Node",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "files": [
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stark-tech-space/api-package-template.git"
+    "url": "git+https://github.com/stark-tech-space/tookan-node.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@stark-tech-space"
@@ -23,9 +23,9 @@
   "author": "@stark-tech-space",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/stark-tech-space/api-package-template/issues"
+    "url": "https://github.com/stark-tech-space/tookan-node/issues"
   },
-  "homepage": "https://github.com/stark-tech-space/api-package-template#readme",
+  "homepage": "https://github.com/stark-tech-space/tookan-node#readme",
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "dotenv": "^9.0.2",
